@@ -1,0 +1,147 @@
+/* Reset and Fonts */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff; /* Light Blue for Home Page */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro, .explore {
+    margin-bottom: 30px;
+}
+
+.intro h2, .explore h2 {
+    color: #6200ea;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+/* Image Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 30s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+.explore ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.explore ul li {
+    flex: 1;
+    margin: 10px;
+}
+
+.explore ul li a {
+    display: block;
+    padding: 15px;
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.explore ul li a:hover {
+    background-color: #ffcc00;
+    color: #6200ea;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 0.9em;
+}
